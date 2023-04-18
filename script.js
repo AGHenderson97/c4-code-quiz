@@ -50,4 +50,17 @@ answerButtonsEl.addEventListener("click", selectAnswer);
 submitScoreButton.addEventListener("click", submitScore);
 clearScoresButton.addEventListener("click", clearScores);
 
-  
+  // Define functions
+function startQuiz() {
+    // Shuffle questions
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
+    currentQuestionIndex = 0;
+    // Show first question
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    // Show question container and hide start button
+    questionContainer.classList.remove("hidden");
+    startButton.classList.add("hidden");
+    // Set timer
+    timeLeft = 60;
+    timerId = setInterval(updateTimer, 1000);
+  }
