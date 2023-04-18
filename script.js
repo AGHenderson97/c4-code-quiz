@@ -28,4 +28,19 @@ var questions = [
       ]
     }
   ];
+
+  // Set up variables
+var startButton = document.getElementById("start-button");
+var questionContainer = document.getElementById("question-container");
+var questionEl = document.getElementById("question");
+var answerButtonsEl = document.getElementById("answer-buttons");
+var resultContainer = document.getElementById("result-container");
+var scoreEl = document.getElementById("score");
+var initialsInput = document.getElementById("initials");
+var submitScoreButton = document.getElementById("submit-score");
+var highscoresContainer = document.getElementById("highscores-container");
+var highscoresList = document.getElementById("highscores-list");
+var clearScoresButton = document.getElementById("clear-scores");
+var shuffledQuestions, currentQuestionIndex;
+var timeLeft, timerId;
   
