@@ -64,3 +64,20 @@ function startQuiz() {
     timeLeft = 60;
     timerId = setInterval(updateTimer, 1000);
   }
+
+  function showQuestion(question) {
+    // Clear previous answers
+    resetAnswers();
+    // Set question text
+    questionEl.innerText = question.question;
+    // Add answer buttons
+    question.answers.forEach(answer => {
+      var button = document.createElement("button");
+      button.innerText = answer.text;
+      button.classList.add("btn");
+      if (answer.correct) {
+        button.dataset.correct = answer.correct;
+      }
+      answerButtonsEl.appendChild(button);
+    });
+  }
