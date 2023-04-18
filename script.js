@@ -88,7 +88,7 @@ function startQuiz() {
     }
   }
   
-  function selectAnswer(event) {
+  function selectAnswer(event) {}
     var selectedButton = event.target;
     var correct = selectedButton.dataset.correct;
     // Highlight selected button
@@ -96,6 +96,6 @@ function startQuiz() {
       setStatusClass(button, button.dataset.correct);
     });
     // Show next question or end quiz if no questions left
-    if (shuffledQuestions.length > currentQuestionIndex + 1) {
+    if (shuffledQuestions.length > currentQuestionIndex + 1) {}
       currentQuestionIndex++;
-      setTimeout(() => showQuestion(shuffledQuestions[currentQuestionIndex]), 1000
+      setTimeout(() => showQuestion(shuffledQuestions[currentQuestionIndex]), 1000);
