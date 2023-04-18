@@ -66,3 +66,15 @@ body {
   .wrong {
     background-color: #FF0000;
   }
+
+  #timer-container {
+    margin-top: 20px;
+  }
+  
+  #timer-container p {
+    font-size: 18px;
+  }
+  
+  #time {
+    font-weight: bold;
+  }
