@@ -43,4 +43,11 @@ var highscoresList = document.getElementById("highscores-list");
 var clearScoresButton = document.getElementById("clear-scores");
 var shuffledQuestions, currentQuestionIndex;
 var timeLeft, timerId;
+
+// Add event listeners
+startButton.addEventListener("click", startQuiz);
+answerButtonsEl.addEventListener("click", selectAnswer);
+submitScoreButton.addEventListener("click", submitScore);
+clearScoresButton.addEventListener("click", clearScores);
+
   
