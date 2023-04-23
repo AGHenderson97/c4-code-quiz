@@ -20,3 +20,9 @@ WHEN all questions are answered or the timer reaches 0
 THEN the game is over
 WHEN the game is over
 THEN I can save my initials and score
+
+Deployed URL:
+https://aghenderson97.github.io/m4c-code-quiz/
+
+Screenshot:
+<img width="498" alt="Screenshot 2023-04-22 at 11 23 53 PM" src="https://user-images.githubusercontent.com/113946573/233818157-165e7702-5a83-41b0-95c0-7d72c199a72d.png">
